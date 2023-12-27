@@ -1,0 +1,40 @@
+[package]
+name = "simulation"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[features]
+dry = []
+
+[dependencies]
+ethers-flashbots = { git = "https://github.com/onbjerg/ethers-flashbots" }
+ethers = {version = "2.0.0", features = ["abigen", "ws"]}
+revm = {version = "3.0.0", features = ["ethersdb", "serde", "std"]}
+dotenv = "0.15.0"
+hashbrown = "0.13.2"
+crossbeam = "0.8"
+num-bigfloat = "1.6.2"
+parking_lot = "0.12.1"
+serde_json = "1.0"
+bus = "2.4.0"
+tokio = { version = "1.28", features = ["full", "tracing"] }
+log = "0.4.17"
+url = "2.3.1"
+dashmap = "5.4.0"
+async-trait = "0.1.68"
+async-recursion = "1.0.2"
+hex = "0.4.3"
+serde = "1.0.145"
+eyre = "0.6.8"
+reqwest = "0.11.12"
+time = "*"
+indoc = "2"
+indicatif = "0.17.1"
+thiserror = "1.0.37"
+redis = { version = "0.23.0", features = ["tokio-comp", "r2d2"] }
+r2d2 = "0.8.10"
+fern = {version = "0.6", features = ["colored"]}
+chrono = "0.4.23"
+futures = "0.3.5"
+colored = "2.0.0"
